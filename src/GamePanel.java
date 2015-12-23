@@ -40,7 +40,8 @@ public class GamePanel extends JPanel {
 			Brick brick1 = new Brick(ImageLoader.Load("brick.png"));
 			brick1.position.x = position
 					.x;
-			brick1.position.y = position.y;
+			brick1.position.y = position
+					.y;
 			gameObjects.add(brick1);
 			}
 		}

@@ -11,6 +11,7 @@ import java.awt.Dimension;
 
 import javax.swing.JPanel;
 import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
 
 public class GamePanel extends JPanel {
 	int width;
@@ -63,6 +64,11 @@ public class GamePanel extends JPanel {
 				gameObjects.add(brick1);
 			}
 		}
+	}
+	
+	public void gameOver() {
+		JOptionPane.showMessageDialog(this, "Game Over", "Game Over", JOptionPane.YES_NO_OPTION);
+		System.exit(ABORT);
 	}
 
 	@Override

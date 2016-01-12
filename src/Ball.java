@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -39,6 +40,10 @@ public class Ball extends ImageGameObject {
 			ySpeed = -1;
 		position.x = position.x + xSpeed;
 		position.y = position.y + ySpeed;
+	}
+	
+	public Rectangle getBounds() {
+		return new Rectangle(position.x, position.y, BALL_WIDTH, BALL_HEIGHT);
 	}
 
 }
